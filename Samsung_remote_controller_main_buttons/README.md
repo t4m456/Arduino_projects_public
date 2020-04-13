@@ -1,4 +1,4 @@
-Created by Tamás Szabó
+<h3>Created by Tamás Szabó</h3>
 
   13.04.2020
 
@@ -12,7 +12,7 @@ Created by Tamás Szabó
   SAMSUNG LE40B530p7; 
   SAMSUNG UE43NV7122
             
-Samsung remote controller clone with arduino.
+<h2>Samsung remote controller clone with arduino.</h2>
 
 
 I am using Arduino NANO
