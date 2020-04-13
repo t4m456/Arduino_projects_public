@@ -4,5 +4,5 @@
 
 <h3>In case of any questions feel free to text me.</h3>
 
-<p> <i>Name: Tamas Szabo</i> </p>
-<p> <i>Email: szabotamas6@gmail.com</i> </p>
+<p> <i><b>Name:</b> Tamas Szabo</i> </p>
+<p> <i><b>Email:</b> szabotamas6@gmail.com</i> </p>
