@@ -1,4 +1,5 @@
-<h1>Welcome!</h1>
+
+<h1><font color="red">Welcome!</font></h1>
 
 <h2>In this repo you can find different projects for Arduino!</h2>
 
