@@ -6,7 +6,7 @@
   
   -IR Transmitter for Samsung TV remote controller
   
-  -Main buttons like: Power, Source, Volume UP, Volume DOWN, Control arrows, OK (middle) button, Return
+  <p>-Main buttons like: <br> Power, Source, Volume UP, Volume DOWN, Control arrows, OK (middle) button, Return</p>
   
   Tested on: 
   SAMSUNG LE40B530p7; 
