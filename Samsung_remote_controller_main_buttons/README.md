@@ -38,5 +38,6 @@ I am using Arduino NANO
 <p></p>   
 <img src="images/3_p.jpg" width="300" height="200" align="middle" hspace="5"> 
 <img src="images/4_p.jpg" width="300" height="200" align="middle" hspace="5"> 
+<p></p>
 <img src="images/5_p.jpg" width="300" height="200" align="middle" hspace="5">
 </div>
