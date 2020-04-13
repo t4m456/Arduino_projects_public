@@ -8,10 +8,10 @@
   
   <p>-Main buttons like: <br> Power, Source, Volume UP, Volume DOWN, Control arrows, OK (middle) button, Return</p>
   
-  Tested on: 
-  SAMSUNG LE40B530p7; 
-  SAMSUNG UE43NV7122
-            
+  <ul>Tested on: 
+  <li>SAMSUNG LE40B530p7</li> 
+  <li>SAMSUNG UE43NV7122</li>
+  </ul>      
 <h2>Samsung remote controller clone with arduino.</h2>
 
 
