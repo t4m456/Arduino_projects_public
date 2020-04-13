@@ -1,9 +1,8 @@
-Welcome!
+<h1>Welcome!</h1>
 
-In this repo you can find different projects for Arduino!
+<h2>In this repo you can find different projects for Arduino!</h2>
 
-In case of any questions feel free to text me.
+<h3>In case of any questions feel free to text me.</h3>
 
-Name: Tamas Szabo
-
-Email: szabotamas6@gmail.com
+<p> <i>Name: Tamas Szabo</i> </p>
+<p> <i>Email: szabotamas6@gmail.com</i> </p>
