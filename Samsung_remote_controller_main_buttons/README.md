@@ -8,29 +8,24 @@
   
   <p>-Main buttons like: <br> Power, Source, Volume UP, Volume DOWN, Control arrows, OK (middle) button, Return</p>
   
-  <ul>Tested on: 
+  <h3>Tested on:</h4> 
+  <ul>
   <li>SAMSUNG LE40B530p7</li> 
   <li>SAMSUNG UE43NV7122</li>
   </ul>      
 <h2>Samsung remote controller clone with arduino.</h2>
 
-
-I am using Arduino NANO
+<h4>I am using Arduino NANO</h4>
   
-  For this project you need:
-  
-    1. Arduino (from size point of view I prefer NANO but other types can be good
-    
-    2. 10pcs of push-buttons
-    
-    3. 10pcs of 1K or 10K Ohm resistors
-    
-    4. IR LED
-    
-    5  50 Ohm resistor
-    
-    6. 20+ jumper wires
-
+  <h3>For this project you need:</h3>
+  <ol>
+   <li>Arduino (from size point of view I prefer NANO but other types can be good</li>
+   <li>10pcs of push-button</li>
+   <li>10pcs of 1K or 10K Ohm resistors</li>
+   <li>IR LED</li>
+   <li>50 Ohm resistor</li>
+   <li>20+ jumper wires</li>
+</ol>
 <p>Right now I am ready with the breadboard version and I will make the normal PCB version too shortly.</p>
 <div>
 <img src="images/1_p.jpg" width="300" height="200" align="middle" hspace="5">
