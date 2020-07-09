@@ -70,9 +70,6 @@ void loop() {
    }
    
   
-  
-    
-   // digitalWrite(LED_5_NARANCS,HIGH);
    
    
    
