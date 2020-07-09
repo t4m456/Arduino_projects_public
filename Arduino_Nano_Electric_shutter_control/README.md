@@ -20,6 +20,8 @@
    <li>1pc push button</li>
    <li>2pcs nice looking push buttons or wall switches</li>
    <li>LDR sensor for automatic function</li>
+   <li>Shutter motor with both ending switches</li>
+   <li>250V electric wires</li>
 </ol>
 
 <div>
