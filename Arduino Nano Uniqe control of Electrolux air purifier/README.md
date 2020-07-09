@@ -4,22 +4,22 @@
 
   E-mail: szabotamas6@gmail.com
   
-  -Arduino Nano shutter control
+  -Arduino Nano Electrolux Oxy3 air purifier control
   
-  <p>Two functions, manual and automatic</p>
+  <p>Timing and adjasting the RPM of the purifier</p>
         
   
   <h3>For this project you need:</h3>
   <ol>
    <li>Arduino (from size point of view I prefer NANO but other types can be good)</li>
    <li>Electric box</li>
-   <li>4pcs of 1K or 10K Ohm resistors</li>
-   <li>LCD 16 display</li>
+   <li>3pcs of 1K or 10K Ohm resistors</li>
+   <li>2pcs 2 digits display (ON/OFF or 0/1)</li>
    <li>2pcs of relays</li>
    <li>jumper wires</li>
-   <li>1pc push button</li>
-   <li>2pcs nice looking push buttons or wall switches</li>
-   <li>LDR sensor for automatic function</li>
+   <li>2pc push button</li>
+   <li>1pcs of LED for millis safety time</li>
+   <li>1.5m low electric 2 chanel wire</li>
 </ol>
 
 <div>
