@@ -4,13 +4,6 @@
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 
-//LCD display hints-------------
-//    lcd.clear(); 
-//    lcd.print("PM2.5/ugm3 : ");
-//    lcd.setCursor(0,1);
-//    lcd.print(ugm3, 3);
-//------------------
-
 int Button_UP = 2;
 int Button_DOWN = 11;
 int Button_FunctionSelect = 4;
@@ -22,7 +15,6 @@ int toggle_down = 0;
 int toggle_switch = 0;
 
 int toggle_auto = 0;
-//int toggle_auto_down = 0;
 
 const unsigned long timeDuration_UP = 40000;
 const unsigned long timeDuration_DOWN = 40000;
@@ -39,14 +31,14 @@ void setup() {
 lcd.begin();
 lcd.backlight();
 
-//fun operation-------------
+//System ready-------------
 
        lcd.clear();
        lcd.print("Rendszer");
        lcd.setCursor(0,1);
        lcd.print("kesz");
 
-//fun operation
+//System ready end-------------
 
 pinMode(Button_UP, INPUT);
 pinMode(Button_DOWN, INPUT);
@@ -55,7 +47,7 @@ pinMode(Button_FunctionSelect, INPUT);
 pinMode(Relay_UP, OUTPUT);
 pinMode(Relay_DOWN, OUTPUT);
 
-//Serial.begin(9600);
+//Serial.begin(9600); //If you want to use the serial monitor for testing
 pinMode(A0, INPUT);
 
 digitalWrite(Relay_UP, HIGH);
@@ -105,9 +97,9 @@ unsigned long safetyTime = millis();
       delay(150);
       //Serial.println(LDR_value);
 
-      // Biztonsági leállítás
+      // Safety stop
 
-      if (safetyTime > 2147364800) { // Ez kb. 25 nap vagyis 2147364800
+      if (safetyTime > 2147364800) { // This is approx. 25 days equals with 2147364800 millis
        digitalWrite(Relay_UP, HIGH);
        digitalWrite(Relay_DOWN, HIGH);
        lcd.backlight();
@@ -119,11 +111,11 @@ unsigned long safetyTime = millis();
       
 
 };
- //--------------------------------------------AUTOMATA UZEM------------------------------// 
+ //--------------------------------------------AUTOMATIC FUNCTION------------------------------// 
 int automaticOperation(){
   unsigned long currentTime = millis();
   
-  // ----- AUTO Redony mozgatas felfele
+  // ----- AUTO shutter moves up
     
     if (LDR_value >= 550 && digitalRead(Relay_DOWN) == HIGH && toggle_auto == 0) {
       digitalWrite(Relay_UP, LOW);
@@ -147,7 +139,7 @@ int automaticOperation(){
      delay(250);
       
     };
-  // ----- AUTO Redony mozgatas lefele
+  // ----- AUTO shutter moves down
      
     if (LDR_value <= 450 && digitalRead(Relay_UP) == HIGH && toggle_auto == 1) {
       digitalWrite(Relay_DOWN, LOW);
@@ -180,9 +172,9 @@ int automaticOperation(){
 
    
     };
- //--------------------------------------------AUTOMATA UZEM VEGE------------------------------//
+ //--------------------------------------------AUTOMATIC FUNCTION END------------------------------//
  
- //--------------------------------------------MANUALIS UZEM------------------------------// 
+ //--------------------------------------------MANUAL FUNCTION------------------------------// 
   int manualOperation(){
 
   unsigned long currentTime = millis();
@@ -198,7 +190,7 @@ int automaticOperation(){
        lcd.setCursor(0,1);
        lcd.print("Redony FEL");
        
-       previousTime = currentTime; //Nullázzuk a számlálót
+       previousTime = currentTime; //Reseting counter millis
        delay(250);
   };
   if(digitalRead(Button_UP) == HIGH || digitalRead(Button_DOWN) == HIGH || currentTime - previousTime >= timeDuration_UP && toggle_up == 1) {
@@ -212,7 +204,7 @@ int automaticOperation(){
        lcd.print("Manualis uzem");
        delay(250);
   };
-  //Redőny mozgatás lefele-----------------
+  //Shutter moves down -----------------
   if (digitalRead(Button_DOWN) == HIGH && toggle_down == 0 && digitalRead(Button_UP) == LOW && digitalRead(Relay_UP) == HIGH){
         digitalWrite(Relay_DOWN, LOW);
        
@@ -223,7 +215,7 @@ int automaticOperation(){
        lcd.setCursor(0,1);
        lcd.print("Redony LE");
 
-       previousTime = currentTime; //Nullázzuk a számlálót
+       previousTime = currentTime; 
         delay(250);
   };
   if(digitalRead(Button_DOWN) == HIGH || digitalRead(Button_UP) == HIGH || currentTime - previousTime >= timeDuration_DOWN && toggle_down == 1) {
@@ -250,6 +242,6 @@ int automaticOperation(){
   
  
   };
- //--------------------------------------------MANUALIS UZEM VEGE------------------------------// 
+ //--------------------------------------------MANUAL FUNCTION END------------------------------// 
 
  
