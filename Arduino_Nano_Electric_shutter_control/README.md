@@ -25,11 +25,7 @@
 </ol>
 
 <div>
-<img src="images/1_p.jpg" width="300" height="200" align="middle" hspace="5">
-<img src="images/2_p.jpg" width="300" height="200" align="middle" hspace="5">
+<img src="images/shutter_re.jpg" width="300" height="200" align="middle" hspace="5">
 <p></p>   
-<img src="images/3_p.jpg" width="300" height="200" align="middle" hspace="5"> 
-<img src="images/4_p.jpg" width="300" height="200" align="middle" hspace="5"> 
-<p></p>
-<img src="images/5_p.jpg" width="300" height="200" align="middle" hspace="5">
+
 </div>
