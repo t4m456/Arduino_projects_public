@@ -25,7 +25,7 @@
 </ol>
 
 <div>
-<img src="images/shutter_re.jpg" width="300" height="200" align="middle" hspace="5">
+<img src="img/shutter_re.jpg" width="300" height="200" align="middle" hspace="5">
 <p></p>   
 
 </div>
