@@ -6,7 +6,7 @@
   
   -Arduino Nano Electrolux Oxy3 air purifier control
   
-  <p>Timing and adjasting the RPM of the purifier</p>
+  <p>Timing and adjusting the RPM of the purifier</p>
         
   
   <h3>For this project you need:</h3>
